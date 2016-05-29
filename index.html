@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>HTML5 boilerplate – all you really need…</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Personal Portfolio Site</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="assets/js/script.js"></script>
     <!--[if IE]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -13,14 +14,40 @@
 
   <body id="home">
     <div class="top-bar">
-      <h2 class="header-link"></h2>
-      <h2 class="header-link"></h2>
-      <h2 class="header-link"></h2>
+      <div class="top-bar-content">
+        <ul class="nav-links">
+            <li class="header-link"><a href="#about-me">About</a></li>
+            <li class="header-link"><a href="#experience">Experience</a></li>
+            <li class="header-link"><a href="#portfolio">Portfolio</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="section" id="about-me"></div>
-    <div class="section" id="experience"></div>
-    <div class="section" id="porfolio"></div>
-    <div class="section" id="hobbies"></div>
+
+    <div class="section-header" id="about-me">About</div>
+    <div class="section-content" id="about-me-content">
+      <div class="self-image">
+        <img src="assets/img/placeholder-image.jpg" alt="Picture" class="self">
+      </div>
+      <div class="self-summary">
+        <h3>Matthew Riggott</h3>
+        <h4>Full Stack Web Developer</h4>
+        <br>
+        <p>Hi, my name is Matt.  I am a full stack web developer.  Ruby and Rails is my preferred back end framework, but I'm willing to use other tools.
+        </p>
+      </div>
+    </div>
+    <div class="section-header" id="experience">Experience and Skills</div>
+    <div class="section-content">
+
+    </div>
+    <div class="section-header" id="porfolio">Portfolio</div>
+    <div class="section-content">
+
+    </div>
+    <div class="section-header" id="hobbies">Hobbies</div>
+    <div class="section-content">
+
+    </div>
 
   </body>
 </html>

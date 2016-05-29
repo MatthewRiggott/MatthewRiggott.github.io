@@ -1,60 +1,130 @@
-html,body,div,span,applet,object,iframe,
-h1,h2,h3,h4,h5,h6,p,blockquote,pre,
-a,abbr,acronym,address,big,cite,code,
-del,dfn,em,img,ins,kbd,q,s,samp,
-small,strike,strong,sub,sup,tt,var,
-b,u,i,center,
-dl,dt,dd,ol,ul,li,
-fieldset,form,label,legend,
-table,caption,tbody,tfoot,thead,tr,th,td,
-article,aside,canvas,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section,summary,
-time,mark,audio,video{
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    font:inherit;
-    vertical-align:baseline;
-}
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+/* css boilerplate template courtesy of http://csswizardry.com/2011/01/the-real-html5-boilerplate/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-family: 'Raleway', sans-serif;
+  vertical-align: baseline; }
+
 /* HTML5 display-role reset for older browsers */
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section{
-    display:block;
-}
-body{
-    line-height:1;
-}
-ol,ul{
-    list-style:none;
-}
-blockquote,q{
-    quotes:none;
-}
-blockquote:before,blockquote:after,
-q:before,q:after{
-    content:’’;
-    content:none;
-}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ’’;
+  content: none; }
+
 /* remember to define visible focus styles!
 :focus{
     outline:?????;
 } */
-
 /* remember to highlight inserts somehow! */
-ins{
-    text-decoration:none;
-}
-del{
-    text-decoration:line-through;
-}
+ins {
+  text-decoration: none; }
 
-table{
-    border-collapse:collapse;
-    border-spacing:0;
-}
+del {
+  text-decoration: line-through; }
 
-.title{
-    color: green;
-}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*---COLOR CONSTANTS---*/
+/*---TEXT COLORS---*/
+/*---MIX-INS---*/
+/*---start css---*/
+.top-bar {
+  margin: auto;
+  display: inline-block;
+  width: 100%;
+  width: 100vw;
+  background-color: white;
+  height: 4em;
+  box-shadow: 0px 5px 20px #aaaaaa; }
+
+.top-bar-content {
+  width: 50%;
+  width: 50vw;
+  padding-top: .75em;
+  margin: 0 auto;
+  display: table;
+  text-align: center; }
+
+.header-link {
+  color: green;
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+  font-size: 1.5em;
+  padding: .25em; }
+
+.section-header {
+  width: 100%;
+  width: 100vw;
+  height: 1.5em;
+  font-size: 2em;
+  text-align: center;
+  border-bottom: thick line #111111; }
+
+.section-content {
+  width: 100%;
+  width: 100vw;
+  height: 400px; }
+  .section-content .self-image {
+    width: 50%;
+    width: 50vw;
+    float: left;
+    height: auto;
+    margin: auto; }
+    .section-content .self-image img {
+      width: 50%;
+      width: 50vw;
+      height: auto;
+      margin: 0; }
+  .section-content .self-summary {
+    width: 45%;
+    width: 45vw;
+    font-size: 1em;
+    margin-left: 1em;
+    display: inline-block; }
+    .section-content .self-summary h3, .section-content .self-summary h4 {
+      text-align: center; }
+
+a:link {
+  color: #1eadfb; }
+
+a:hover:active {
+  color: #1056fa;
+  font-weight: bold; }
+
+a:visited {
+  color: #1eadfb; }
+
+/*# sourceMappingURL=style.css.map */

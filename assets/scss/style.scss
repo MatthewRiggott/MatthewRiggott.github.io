@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/* css boilerplate template courtesy of http://csswizardry.com/2011/01/the-real-html5-boilerplate/ */
+
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    font-family: 'Raleway', sans-serif;
+    vertical-align:baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{
+    display:block;
+}
+body{
+    line-height:1;
+}
+ol,ul{
+    list-style:none;
+}
+blockquote,q{
+    quotes:none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after{
+    content:’’;
+    content:none;
+}
+/* remember to define visible focus styles!
+:focus{
+    outline:?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins{
+    text-decoration:none;
+}
+del{
+    text-decoration:line-through;
+}
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/*---COLOR CONSTANTS---*/
+$light-blue: #1eadfb;
+
+/*---TEXT COLORS---*/
+$link-visited: #1eadfb;
+$link-hover: #1056fa;
+$link-base: #1eadfb;
+
+/*---MIX-INS---*/
+@mixin set-width($value){
+    width: $value#{"%"};
+    width: $value#{"vw"};
+}
+/*---start css---*/
+
+.top-bar{
+    margin: auto;
+    display: inline-block;
+    @include set-width(100);
+    background-color: white;
+    height: 4em;
+    box-shadow: 0px 5px 20px #aaaaaa;
+}
+
+.top-bar-content{
+    @include set-width(50);
+    padding-top: .75em;
+    margin: 0 auto;
+    display: table;
+    text-align: center;
+}
+
+.header-link{
+    color: green;
+    display: inline-block;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    padding: .25em;
+}
+
+.section-header{
+    @include set-width(100);
+    height: 1.5em;
+    font-size: 2em;
+    text-align: center;
+    border-bottom: thick line #111111;
+}
+
+.section-content{
+    @include set-width(100);
+
+
+
+    height: 400px;
+
+    .self-image{
+        @include set-width(50);
+        float: left;
+        height: auto;
+        margin: auto;
+
+        img{
+            @include set-width(50);
+            height: auto;
+            margin: 0;
+        }
+    }
+
+    .self-summary{
+        @include set-width(45);
+        font-size: 1em;
+        margin-left: 1em;
+
+
+        display: inline-block;
+
+        h3, h4{
+            text-align: center;
+        }
+    }
+}
+
+a:link{
+    color: $link-base;
+}
+a:hover:active{
+    color: $link-hover;
+    font-weight: bold;
+}
+a:visited{
+    color: $link-visited;
+}
