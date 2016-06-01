@@ -60,8 +60,8 @@ table{
 
 /*---COLOR CONSTANTS---*/
 $light-blue: #1eadfb;
+$light-grey: #F8F8F8;
 
-/*---TEXT COLORS---*/
 $link-visited: #1eadfb;
 $link-hover: #1056fa;
 $link-base: #1eadfb;
@@ -106,20 +106,30 @@ $link-base: #1eadfb;
     font-size: 2em;
     text-align: center;
     border-bottom: thick line #111111;
+    padding-top: .5em;
 }
 
+#about-me-content{
+    height: 350px;
+}
+
+#experience-content, #experience, .skill-container{
+    background-color: $light-blue;
+    color: white;
+}
+#experience-content{
+    height: 450px;
+}
 .section-content{
     @include set-width(100);
-
-
-
-    height: 400px;
+    position: relative;
 
     .self-image{
         @include set-width(50);
         float: left;
         height: auto;
         margin: auto;
+        clear: left;
 
         img{
             @include set-width(50);
@@ -128,17 +138,85 @@ $link-base: #1eadfb;
         }
     }
 
-    .self-summary{
-        @include set-width(45);
-        font-size: 1em;
-        margin-left: 1em;
+    .self-summary-container{
+        background-color: $light-grey;
+        height: 100%;
+        .self-summary{
+            @include set-width(40);
+            font-size: 1em;
+            padding-left: 2em;
+            margin-right: 2em;
+            display: inline-block;
 
+            h3.name {
+                font-size: 2.0em;
+            }
+            h4.title{
+                font-size: 1.5em;
+            }
+            h3, h4{
+                text-align: center;
+                padding: .3em;
+            }
+            p.self-description{
+                padding-bottom: 1em;
+            }
+            p.contact{
 
-        display: inline-block;
+                padding-top: .25em;
+                padding-bottom: .25em;
+            }
+            .contact-links{
+                display: flex;
+                justify-content: space-between;
+                padding-top: 1em;
 
-        h3, h4{
-            text-align: center;
+                a.contact-link{
+                    display: inline;
+                }
+            }
         }
+    }
+
+    .experience {
+        margin-left: 4em;
+        width: 40vw;
+        float: left;
+        clear: left;
+    }
+
+    h3.title{
+        font-size: 1.5em;
+        padding-bottom: .25em;
+    }
+    p.date{
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+    p.description{
+        padding-bottom: 1em;
+    }
+    .courses-container{
+        float: right;
+        padding-right: 1em;
+        @include set-width(45)
+    }
+
+    .course{
+        padding-bottom: .75em;
+    }
+
+}
+
+.skill-container{
+    clear: right;
+    padding-left: 4em;
+    .skills{
+        word-spacing: .25em;
+        font-size: 1.25em;
+        height: 20px;
+        padding-top: .25em;
+        padding-bottom: 1em;
     }
 }
 

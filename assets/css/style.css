@@ -56,7 +56,6 @@ table {
   border-spacing: 0; }
 
 /*---COLOR CONSTANTS---*/
-/*---TEXT COLORS---*/
 /*---MIX-INS---*/
 /*---start css---*/
 .top-bar {
@@ -91,31 +90,93 @@ table {
   height: 1.5em;
   font-size: 2em;
   text-align: center;
-  border-bottom: thick line #111111; }
+  border-bottom: thick line #111111;
+  padding-top: .5em; }
+
+#about-me-content {
+  height: 350px; }
+
+#experience-content, #experience, .skill-container {
+  background-color: #1eadfb;
+  color: white; }
+
+#experience-content {
+  height: 450px; }
 
 .section-content {
   width: 100%;
   width: 100vw;
-  height: 400px; }
+  position: relative; }
   .section-content .self-image {
     width: 50%;
     width: 50vw;
     float: left;
     height: auto;
-    margin: auto; }
+    margin: auto;
+    clear: left; }
     .section-content .self-image img {
       width: 50%;
       width: 50vw;
       height: auto;
       margin: 0; }
-  .section-content .self-summary {
+  .section-content .self-summary-container {
+    background-color: #F8F8F8;
+    height: 100%; }
+    .section-content .self-summary-container .self-summary {
+      width: 40%;
+      width: 40vw;
+      font-size: 1em;
+      padding-left: 2em;
+      margin-right: 2em;
+      display: inline-block; }
+      .section-content .self-summary-container .self-summary h3.name {
+        font-size: 2.0em; }
+      .section-content .self-summary-container .self-summary h4.title {
+        font-size: 1.5em; }
+      .section-content .self-summary-container .self-summary h3, .section-content .self-summary-container .self-summary h4 {
+        text-align: center;
+        padding: .3em; }
+      .section-content .self-summary-container .self-summary p.self-description {
+        padding-bottom: 1em; }
+      .section-content .self-summary-container .self-summary p.contact {
+        padding-top: .25em;
+        padding-bottom: .25em; }
+      .section-content .self-summary-container .self-summary .contact-links {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1em; }
+        .section-content .self-summary-container .self-summary .contact-links a.contact-link {
+          display: inline; }
+  .section-content .experience {
+    margin-left: 4em;
+    width: 40vw;
+    float: left;
+    clear: left; }
+  .section-content h3.title {
+    font-size: 1.5em;
+    padding-bottom: .25em; }
+  .section-content p.date {
+    padding-top: .5em;
+    padding-bottom: .5em; }
+  .section-content p.description {
+    padding-bottom: 1em; }
+  .section-content .courses-container {
+    float: right;
+    padding-right: 1em;
     width: 45%;
-    width: 45vw;
-    font-size: 1em;
-    margin-left: 1em;
-    display: inline-block; }
-    .section-content .self-summary h3, .section-content .self-summary h4 {
-      text-align: center; }
+    width: 45vw; }
+  .section-content .course {
+    padding-bottom: .75em; }
+
+.skill-container {
+  clear: right;
+  padding-left: 4em; }
+  .skill-container .skills {
+    word-spacing: .25em;
+    font-size: 1.25em;
+    height: 20px;
+    padding-top: .25em;
+    padding-bottom: 1em; }
 
 a:link {
   color: #1eadfb; }
