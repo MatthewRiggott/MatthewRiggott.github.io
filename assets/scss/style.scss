@@ -123,6 +123,7 @@ $link-base: #1eadfb;
 .section-content{
     @include set-width(100);
     position: relative;
+    overflow: overlay;
 
     .self-image{
         @include set-width(50);
@@ -193,6 +194,12 @@ $link-base: #1eadfb;
         padding-top: .5em;
         padding-bottom: .5em;
     }
+    p.job-title{
+        padding-bottom: .5em;
+    }
+    p.proj-desc{
+        padding-bottom: .5em;
+    }
     p.description{
         padding-bottom: 1em;
     }
@@ -206,11 +213,38 @@ $link-base: #1eadfb;
         padding-bottom: .75em;
     }
 
+    .project{
+        width: 40%;
+        width: 40vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+        h3.proj-name{
+            text-align: center;
+        }
+
+        a{
+            margin: auto;
+            padding-top: .5em;
+        }
+
+    }
+#portfolio-content{
+    background-image: url();
+
+}
+
+
 }
 
 .skill-container{
     clear: right;
     padding-left: 4em;
+
     .skills{
         word-spacing: .25em;
         font-size: 1.25em;

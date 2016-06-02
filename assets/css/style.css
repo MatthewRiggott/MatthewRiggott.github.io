@@ -106,7 +106,8 @@ table {
 .section-content {
   width: 100%;
   width: 100vw;
-  position: relative; }
+  position: relative;
+  overflow: overlay; }
   .section-content .self-image {
     width: 50%;
     width: 50vw;
@@ -158,6 +159,10 @@ table {
   .section-content p.date {
     padding-top: .5em;
     padding-bottom: .5em; }
+  .section-content p.job-title {
+    padding-bottom: .5em; }
+  .section-content p.proj-desc {
+    padding-bottom: .5em; }
   .section-content p.description {
     padding-bottom: 1em; }
   .section-content .courses-container {
@@ -167,6 +172,22 @@ table {
     width: 45vw; }
   .section-content .course {
     padding-bottom: .75em; }
+  .section-content .project {
+    width: 40%;
+    width: 40vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 16px;
+    padding-bottom: 16px; }
+    .section-content .project h3.proj-name {
+      text-align: center; }
+    .section-content .project a {
+      margin: auto;
+      padding-top: .5em; }
+  .section-content #portfolio-content {
+    background-image: url(); }
 
 .skill-container {
   clear: right;

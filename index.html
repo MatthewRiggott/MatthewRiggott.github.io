@@ -50,15 +50,24 @@
     <div class="section-header" id="experience">Experience and Skills</div>
     <div class="section-content" id="experience-content">
       <div class="experience">
-        <h3 class="title">Launch Academy</h3>
-        <p class="date">February 2015 - April 2015</p>
-        <p class="description">10 week full stack development bootcamp specializing in teaching Ruby on Rails, HTML and CSS.  They also emphasize test driven development using RSpec and Capybara.</p>
-        <h3 class="title">Integrated Hygiene Systems</h3>
-        <p class="date">May 2015 - October 2015</p>
-        <p class="description">Assisted with developing the TCP server which stored data from embedded devices.  Worked on web application which allowed users to search and view data, as well as graphically display select portions of it.</p>
-         <h3 class="title">Control Module Inc</h3>
-        <p class="date">November 2011 - January 2015</p>
-        <p class="description">Worked as an installations technician and eventually moved into cost accounting.  Learned visual basic to write macros to automate parts of the job.</p>
+        <div class="job">
+          <h3 class="title">Integrated Hygiene Systems</h3>
+          <p class="date">5/2015 - 10/2015</p>
+          <p class="job-title">Web Developer</p>
+          <p class="description">Assisted with developing the TCP server which stored data from embedded devices.  Worked on web application which allowed users to search and view data, as well as graphically display select portions of it.</p>
+        </div>
+        <div class="job">
+          <h3 class="title">Launch Academy</h3>
+          <p class="date">2/2015 - 4/2015</p>
+          <p class="job-title">Junior Apprentice</p>
+          <p class="description">10 week full stack development bootcamp specializing in teaching Ruby on Rails, HTML and CSS.  They also emphasize test driven development using RSpec and Capybara.</p>
+        </div>
+        <div class="job">
+          <h3 class="title">Control Module Inc</h3>
+          <p class="date">11/2011 - 1/2015</p>
+          <p class="job-title">Cost Accountant/ Field Technician</p>
+          <p class="description">Worked as an installations technician and eventually moved into cost accounting.  Learned visual basic to write macros to automate parts of the job.</p>
+        </div>
       </div>
 
       <div class="courses-container">
@@ -99,45 +108,47 @@
     <div class="section-header" id="portfolio">Portfolio</div>
       <div class="section-content" id="portfolio-content">
         <div class="project">
-          <img src="" alt="" class="projectpic">
           <div class="description">
-            <h3 class="proj-name"></h3>
-            <p class="proj-desc"></p>
+            <h3 class="proj-name">ParentPortal</h3>
+            <p class="proj-desc">HMH Hackathon challenge to build an app to utilize their newly released api in order to improve education.  Our app used the assignments api to allow parents to stay informed our their child's grades as well as communicate concerns to the teacher.</p>
+            <a href="https://github.com/emanoppo/hmh_parent_portal" class="github">Github</a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="description">
+            <h3 class="proj-name">Surf Report</h3>
+            <p class="proj-desc">Current work in progress.  End functionality will be to deliver notification's when the surf in New England is good.  Built to both learn Rails API and extend functionality of a popular surf API for the New England area.</p>
+             <a href="https://github.com/MatthewRiggott/Surf-Report" class="github">Github</a>
+             <a href="https://surf-report.herokuapp.com/"" class="live">Live on Heroku</a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="description">
+            <h3 class="proj-name">Recipes Finder</h3>
+            <p class="proj-desc">Created a CRUD model for users to save, find, rate and create recipes.  The most challenging feature involved recommending recipes to users - this algorithm weighted ingredients in highly favored recipes and found similar recipes.  Other features include AJAX ratings, facebook Oauth2 login and searchability powered by ElasticSearch.</p>
+            <a href="https://github.com/MatthewRiggott/Raving-Recipes" class="github">Github</a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="description">
+            <h3 class="proj-name">CardBoard Games</h3>
+            <p class="proj-desc">Boardgames review site designed in a similar purpose to boardgamegeek.com  Allows for users to rate and create games.  Can view, search and comment on games.  Built using test driven development using the Rspec and Capybara testing frameworks.  Created as a team of 4 while at launch academy.</p>
+            <a href="https://github.com/SensitiveLion/cardboard" class="github">Github</a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="description">
+            <h3 class="proj-name">Data Compression</h3>
+            <p class="proj-desc">Ruby implementation of the huffman coding compression algorithm.  This builds a tree weighted by character frequency and assigns the lowest bit values to the highest frequency characters.</p>
+            <a href="https://github.com/MatthewRiggott/Data-Compression" class="github">Github</a>
           </div>
         </div>
         <div class="project">
           <img src="" alt="" class="projectpic">
           <div class="description">
-            <h3 class="proj-name"></h3>
-            <p class="proj-desc"></p>
-          </div>
-        </div>
-        <div class="project">
-          <img src="" alt="" class="projectpic">
-          <div class="description">
-            <h3 class="proj-name"></h3>
-            <p class="proj-desc"></p>
-          </div>
-        </div>
-        <div class="project">
-          <img src="" alt="" class="projectpic">
-          <div class="description">
-            <h3 class="proj-name"></h3>
-            <p class="proj-desc"></p>
-          </div>
-        </div>
-        <div class="project">
-          <img src="" alt="" class="projectpic">
-          <div class="description">
-            <h3 class="proj-name"></h3>
-            <p class="proj-desc"></p>
-          </div>
-        </div>
-        <div class="project">
-          <img src="" alt="" class="projectpic">
-          <div class="description">
-            <h3 class="proj-name"></h3>
-            <p class="proj-desc"></p>
+            <h3 class="proj-name">Conway's Game of Life</h3>
+            <p class="proj-desc">Built conway's game of life using the Gosu ruby graphics library.  This implementation allows for pausing time as well as changing the period between each "cycle".</p>
+            <a href="https://github.com/MatthewRiggott/game-of-life-gosu/" class="github">Github</a>
           </div>
         </div>
       </div>
