@@ -74,6 +74,10 @@ $link-base: #1eadfb;
 /*---start css---*/
 
 .top-bar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
     margin: auto;
     display: inline-block;
     @include set-width(100);
@@ -83,10 +87,8 @@ $link-base: #1eadfb;
 }
 
 .top-bar-content{
-    @include set-width(50);
     padding-top: .75em;
     margin: 0 auto;
-    display: table;
     text-align: center;
 }
 
@@ -118,37 +120,56 @@ $link-base: #1eadfb;
     color: white;
 }
 #experience-content{
-    height: 450px;
+
 }
 .section-content{
     @include set-width(100);
     position: relative;
     overflow: overlay;
 
-    .self-image{
-        @include set-width(50);
-        float: left;
-        height: auto;
-        margin: auto;
-        clear: left;
-
-        img{
-            @include set-width(50);
+    @media only screen and (max-width: 639px){
+        .self-image{
+            @include set-width(100);
             height: auto;
-            margin: 0;
+            margin: auto;
+
+            img{
+                @include set-width(100);
+                height: auto;
+                margin: 0;
+            }
         }
     }
+    @media only screen and (min-width: 640px){
+        .self-image{
+            @include set-width(50);
+            float: left;
+            height: auto;
+            margin: auto;
+            clear: left;
 
+            img{
+                @include set-width(50);
+                height: auto;
+                margin: 0;
+            }
+        }
+    }
     .self-summary-container{
         background-color: $light-grey;
         height: 100%;
         .self-summary{
-            @include set-width(40);
+            @media only screen and (max-width: 639px){
+               @include set-width(90)
+            }
+            @media only screen and (min-width: 640px){
+                @include set-width(40);
+                display: inline-block;
+            }
+
             font-size: 1em;
             padding-left: 2em;
-            margin-right: 2em;
-            display: inline-block;
-
+            padding-right: 2em;
             h3.name {
                 font-size: 2.0em;
             }
@@ -233,12 +254,6 @@ $link-base: #1eadfb;
         }
 
     }
-#portfolio-content{
-    background-image: url();
-
-}
-
-
 }
 
 .skill-container{
